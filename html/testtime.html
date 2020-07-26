@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5, 
+        user-scalable=no">
+        <title>학교관련사이트</title>
+
+        <meta name="viewport" content="width=device-width">
+		<meta name="description" content="사이트를 버튼 한번으로 들어갈수있는 사이트">
+		<link href="testtime_style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="nav-item i"><a href="index.html" title="메인으로 돌아가기"><img src="image/logo.png" class="logo"></a></div>
+            <div class="nav-item title"><a href="index.html" title="메인으로 돌아가기"><b>학교관련사이트</b></a></div>
+        </div>
+
+        <div class="time">
+            <div class="main-time">
+                <script type="text/javascript">
+                        var d = new Date();
+                        document.write('오늘날짜 : ' + d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일 ');
+                    if (d.getDay() == 0) {document.write('일');}
+                    else if (d.getDay() == 1) {document.write('월');}
+                    else if (d.getDay() == 2) {document.write('화');}
+                    else if (d.getDay() == 3) {document.write('수');}
+                    else if (d.getDay() == 4) {document.write('목');}
+                    else if (d.getDay() == 5) {document.write('금');}
+                    else if (d.getDay() == 6) {document.write('토');}
+                    document.write('요일'); // 일요일 = 0
+                </script>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="title">
+                <span>&nbsp; 1학기 시험시간표 &nbsp;</span>
+            </div>
+            <div class="image">
+                <img src="image/testtimeimage.png" class="testtime image">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>

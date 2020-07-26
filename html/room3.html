@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5, 
+        user-scalable=no">
+        <title>시간표 : 3반</title>
+
+        <meta name="viewport" content="width=device-width">
+		<meta name="description" content="3반 시간표 확인">
+        <link href="/css/room3_style.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript">
+            var a1 = '영어A';
+            var a2 = '체육';
+            var a3 = '음악';
+            var a4 = '국어B';
+            var a5 = '과학B';
+            var a6 = '수학';
+            var a7 = '창체';
+
+            var b1 = '사회C';
+            var b2 = '국어A';
+            var b3 = '진로';
+            var b4 = '수학';
+            var b5 = '기가';
+            var b6 = '과학A';
+            var b7 = '창체';
+            
+            var c1 = '실험';
+            var c2 = '영어A';
+            var c3 = '수학';
+            var c4 = '국어A';
+            var c5 = '정보';
+            var c6 = '정보';
+            var c7 = '사회A';
+            
+            var d1 = '영어B';
+            var d2 = '사회D';
+            var d3 = '음악';
+            var d4 = '과학C';
+            var d5 = '수학';
+            var d6 = '체육';
+            var d7 = '국어C';
+            
+            var e1 = '과학D';
+            var e2 = '사회B';
+            var e3 = '기가';
+            var e4 = '영어B';
+            var e5 = '자율';
+            var e6 = '자율';
+            var e7 = '';
+        </script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="nav-item i"><a href="/index.html" title="메인으로 돌아가기"><img src="/image/logo.png" class="logo"></a></div>
+            <div class="nav-item title"><a href="/index.html" title="메인으로 돌아가기"><b>학교관련사이트</b></a></div>
+        </div>
+
+        <div class="time">
+            <div class="main-time">
+                <script type="text/javascript">
+                        var d = new Date();
+                        document.write('오늘날짜 : ' + d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일 ');
+                    if (d.getDay() == 0) {document.write('일');}
+                    else if (d.getDay() == 1) {document.write('월');}
+                    else if (d.getDay() == 2) {document.write('화');}
+                    else if (d.getDay() == 3) {document.write('수');}
+                    else if (d.getDay() == 4) {document.write('목');}
+                    else if (d.getDay() == 5) {document.write('금');}
+                    else if (d.getDay() == 6) {document.write('토');}
+                    document.write('요일'); // 일요일 = 0
+                </script>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="시간표">
+                <br>
+                <table border="5">
+                    <th class="classotr"></th>
+                    <th class="classotr"><a>월요일</a></th>
+                    <th class="classotr"><a>화요일</a></th>
+                    <th class="classotr"><a>수요일</a></th>
+                    <th class="classotr"><a>목요일</a></th>
+                    <th class="classotr"><a>금요일</a></th>
+
+                    <tr>
+                        <td class="classtime"><p>1교시</p></td>
+                        <td><script type="text/javascript">document.write(a1);</script></td>
+                        <td><script type="text/javascript">document.write(b1);</script></td>
+                        <td><script type="text/javascript">document.write(c1);</script></td>
+                        <td><script type="text/javascript">document.write(d1);</script></td>
+                        <td><script type="text/javascript">document.write(e1);</script></td>
+                    </tr>
+                    <tr>
+                        <td class="classtime"><p>2교시</p></td>
+                        <td><script type="text/javascript">document.write(a2);</script></td>
+                        <td><script type="text/javascript">document.write(b2);</script></td>
+                        <td><script type="text/javascript">document.write(c2);</script></td>
+                        <td><script type="text/javascript">document.write(d2);</script></td>
+                        <td><script type="text/javascript">document.write(e2);</script></td>
+                    </tr>
+                    <tr>
+                        <td class="classtime"><p>3교시</p></td>
+                        <td><script type="text/javascript">document.write(a3);</script></td>
+                        <td><script type="text/javascript">document.write(b3);</script></td>
+                        <td><script type="text/javascript">document.write(c3);</script></td>
+                        <td><script type="text/javascript">document.write(d3);</script></td>
+                        <td><script type="text/javascript">document.write(e3);</script></td>
+                    </tr>
+                    <tr>
+                        <td class="classtime"><p>4교시</p></td>
+                        <td><script type="text/javascript">document.write(a4);</script></td>
+                        <td><script type="text/javascript">document.write(b4);</script></td>
+                        <td><script type="text/javascript">document.write(c4);</script></td>
+                        <td><script type="text/javascript">document.write(d4);</script></td>
+                        <td><script type="text/javascript">document.write(e4);</script></td>
+                    </tr>
+                    <tr>
+                        <td class="classtime"><p>5교시</p></td>
+                        <td><script type="text/javascript">document.write(a5);</script></td>
+                        <td><script type="text/javascript">document.write(b5);</script></td>
+                        <td><script type="text/javascript">document.write(c5);</script></td>
+                        <td><script type="text/javascript">document.write(d5);</script></td>
+                        <td><script type="text/javascript">document.write(e5);</script></td>
+                    </tr>
+                    <tr>
+                        <td class="classtime"><p>6교시</p></td>
+                        <td><script type="text/javascript">document.write(a6);</script></td>
+                        <td><script type="text/javascript">document.write(b6);</script></td>
+                        <td><script type="text/javascript">document.write(c6);</script></td>
+                        <td><script type="text/javascript">document.write(d6);</script></td>
+                        <td><script type="text/javascript">document.write(e6);</script></td>
+                    </tr>
+                    <tr>
+                        <td class="classtime"><p>7교시</p></td>
+                        <td><script type="text/javascript">document.write(a7);</script></td>
+                        <td><script type="text/javascript">document.write(b7);</script></td>
+                        <td><script type="text/javascript">document.write(c7);</script></td>
+                        <td><script type="text/javascript">document.write(d7);</script></td>
+                        <td><script type="text/javascript">document.write(e7);</script></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
