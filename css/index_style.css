@@ -43,15 +43,32 @@
 .time {
     margin-top: 10px;
     text-align: center;
+}
+.time .main-time {
     font-size: 23px;
     background-color: lightgreen;
 }
 
+.time .sub-time {
+    position: absolute;
+    top: 17.2%;
+    left: 37.5%;
+    right: 37.5%;
+    border: 1.5px solid #dedede;
+    width: 250px;
+    height: 60px;
+    line-height: 50px;
+    color: #666;
+    font-size: 40px;
+    text-align: center;
+}
+
 .main {
+    margin-top: 10px;
     text-align: center;
 }
 .class {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .classina {
