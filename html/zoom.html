@@ -43,8 +43,15 @@
                     <input type="text" placeholder="000-000-0000" id="id"/>
                 </div>
                 <div class="ok">
-                    <input type="button" value="확인" />
+                    <input type="button" value="확인" onclick="gozoom();"/>
                 </div>
+                <script>
+                    function gozoom() {
+                        var url = document.getElementById("id").nodeValue;
+                        const zoom = document.querySelector("#zoom");
+                        zoom.innerHTML = url;
+                    }
+                </script>
             </div>
             <div class="text">
                 <div class="subject" id="sub">
