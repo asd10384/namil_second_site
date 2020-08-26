@@ -64,8 +64,8 @@ body {
     border: 2px solid rgb(125, 125, 125);
     color: white;
     cursor: pointer;
-    padding: 2px 5px;
-    font-size: 15px;
+    padding: 4px 10px;
+    font-size: 18px;
     font-weight: bold;
     background-color: #12242c;
 }
