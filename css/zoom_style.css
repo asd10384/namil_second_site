@@ -54,6 +54,9 @@ body {
     font-weight: bold;
     font-size: 30px;
 }
+.set .subtitle {
+    font-size: 10px;
+}
 .set .subtitle .a {
     font-size: 20px;
 }
