@@ -47,9 +47,12 @@
                 </div>
                 <script>
                     function gozoom() {
-                        var url = document.getElementById("id").nodeValue;
+                        var url = document.getElementById("id").innerHTML;
+                        var url2 = document.getElementById("id").innerText;
+                        var url3 = document.getElementById("id").innerHTML.toString;
+                        var url4 = document.getElementById("id").innerText.toString;
                         const zoom = document.querySelector("#zoom");
-                        zoom.innerHTML = url;
+                        zoom.innerHTML = url + b + url1 + b + url2 + b + url3 + b + url4;
                     }
                 </script>
             </div>
