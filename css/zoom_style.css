@@ -89,13 +89,11 @@ body {
 }
 .text .zoom {
     margin-top: 20px;
+    margin-bottom: 35px;
     font-size: 30px;
     color: white;
     font-weight: bold;
     line-height: 150%;
-}
-.text .subject {
-    margin-top: 35px;
 }
 .text .subject .button input {
     border: 2px solid rgb(182, 182, 182);
