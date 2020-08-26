@@ -43,16 +43,14 @@
     margin-top: 10px;
 }
 
-.text .subject {
-    font-size: 20px;
-    font-weight: bold;
-}
 .text .subject .button input {
     background-color: blue;
     border: 1px solid gray;
     color: white;
     cursor: pointer;
     padding: 10px 24px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .button:after {
     content: "";
