@@ -54,10 +54,12 @@
                 <script>
                     function gozoom() {
                         const id = document.querySelector('#id');
+                        const zoom = document.querySelector('#zoom');
                         const url = document.getElementById('id').value;
                         var urlid = url.replace(/-/gi, '');
                         window.open('https://us04web.zoom.us/j/' + urlid, '_blank');
                         id.value = "";
+                        zoom.innerHTML = "";
                     }
                 </script>
             </div>
