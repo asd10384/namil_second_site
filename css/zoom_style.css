@@ -53,11 +53,32 @@ body {
 .set .title {
     font-weight: bold;
 }
-.set input {
+.set .id input {
     margin-top: 10px;
+    margin-bottom: 5px;
     width: 350px;
     font-size: 200%;
     text-align: center;
+}
+.set .ok input {
+    border: 2px solid rgb(125, 125, 125);
+    color: white;
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #12242c;
+}
+.ok:after {
+    content: "";
+    clear: both;
+    display: ruby;
+}
+.ok input:not(:last-child) {
+    border-right: none;
+}
+.ok input:hover {
+    background-color: #071216;
 }
 
 .text {
