@@ -42,3 +42,21 @@
     text-align: center;
     margin-top: 10px;
 }
+
+.text .subject .button input {
+    background-color: blue;
+    border: 1px solid gray;
+    color: white;
+    cursor: pointer;
+}
+.button:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button input:not(:last-child) {
+    border-right: none;
+}
+.button input:hover {
+    background: tomato;
+}
