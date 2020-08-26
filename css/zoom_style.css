@@ -1,6 +1,6 @@
 /* CSS Document */
 body {
-    background: #091921;
+    background: #1e323b;
 }
 .nav {
     background-color: lightblue;
@@ -49,7 +49,7 @@ body {
     margin-top: 40px;
 }
 .text .subject .button input {
-    background-color: #091921;
+    background-color: #1e323b;
     border: 2px solid rgb(182, 182, 182);
     color: white;
     cursor: pointer;
@@ -66,5 +66,5 @@ body {
     border-right: none;
 }
 .button input:hover {
-    background: #03090c;
+    background-color: #03090c;
 }
