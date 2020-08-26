@@ -44,7 +44,7 @@
 }
 
 .text {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .text .subject .button input {
     background-color: blue;
@@ -54,7 +54,7 @@
     padding: 10px 24px;
     font-size: 20px;
     font-weight: bold;
-    width: fit-content;
+    width: 16.5%;
 }
 .button:after {
     content: "";
