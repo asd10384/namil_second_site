@@ -48,6 +48,9 @@ body {
 .text {
     margin-top: 40px;
 }
+.text .subject .button {
+    background-color: #1e323b;
+}
 .text .subject .button input {
     border: 2px solid rgb(182, 182, 182);
     color: white;
