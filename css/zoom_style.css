@@ -49,7 +49,6 @@ body {
     margin-top: 40px;
 }
 .text .subject .button input {
-    background-color: #1e323b;
     border: 2px solid rgb(182, 182, 182);
     color: white;
     cursor: pointer;
@@ -61,7 +60,6 @@ body {
     content: "";
     clear: both;
     display: table;
-    background-color: #0a1920;
 }
 .button input:not(:last-child) {
     border-right: none;
