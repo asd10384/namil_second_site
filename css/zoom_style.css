@@ -50,7 +50,7 @@ body {
 }
 .text .subject .button input {
     background: #091921;
-    border: 1px solid rgb(182, 182, 182);
+    border: 2px solid rgb(182, 182, 182);
     color: white;
     cursor: pointer;
     padding: 10px 24px;
