@@ -37,7 +37,11 @@
         <div class="main">
             <div class="text">
                 <div class="subject" id="sub">
-                    <input type="button" value="국어" onclick="sub='국어'; zoomid();" />
+                    <input type="button" value="국어" onclick="sub=1; zoomid();" />
+                    <input type="button" value="수학" onclick="sub=2; zoomid();" />
+                    <input type="button" value="사회" onclick="sub=3; zoomid();" />
+                    <input type="button" value="과학" onclick="sub=4; zoomid();" />
+                    <input type="button" value="영어" onclick="sub=5; zoomid();" />
                 </div>
                 <div class="zoom" id="zoom">
                     <a>12</a>
@@ -45,7 +49,7 @@
             </div>
             <script>
                 const zoom = document.querySelector("#zoom");
-                var sub = "";
+                var sub = 0;
 
                 zoom.innerHTML = "";
 
