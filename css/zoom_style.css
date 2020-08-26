@@ -48,6 +48,7 @@
     border: 1px solid gray;
     color: white;
     cursor: pointer;
+    padding: 10px 24px;
 }
 .button:after {
     content: "";
