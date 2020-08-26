@@ -53,9 +53,11 @@
                 </div>
                 <script>
                     function gozoom() {
+                        const id = document.querySelector('#id');
                         const url = document.getElementById('id').value;
                         var urlid = url.replace(/-/gi, '');
                         document.location.href="https://us04web.zoom.us/j/" + urlid;
+                        id.value = "";
                     }
                 </script>
             </div>
