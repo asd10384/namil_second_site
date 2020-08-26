@@ -49,7 +49,8 @@ body {
     margin-top: 40px;
 }
 .text .subject .button input {
-    border: 1px solid gray;
+    background: #091921;
+    border: 1px solid rgb(182, 182, 182);
     color: white;
     cursor: pointer;
     padding: 10px 24px;
