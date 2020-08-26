@@ -50,6 +50,9 @@ body {
     color: white;
     font-size: 20px;
 }
+.set .title {
+    font-weight: bold;
+}
 .set input {
     margin-top: 10px;
     padding: 5px 10px;
