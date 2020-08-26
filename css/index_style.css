@@ -103,25 +103,32 @@
 .자가진단 {
     margin-top: 80px;
 }
-
 .자가진단 .title {
     font-size: 25px;
     font-weight: bold;
 }
-
 .자가진단 .link img {
     width: 480px;
+}
+
+.남일줌 {
+    margin-top: 100px;
+}
+.남일줌 .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.남일줌 .link img {
+    width: 330px;
 }
 
 .학교홈페이지 {
     margin-top: 100px;
 }
-
 .학교홈페이지 .title {
     font-size: 25px;
     font-weight: bold;
 }
-
 .학교홈페이지 .link img {
     width: 480px;
 }
@@ -129,13 +136,11 @@
 .ebsclass {
     margin-top: 100px;
 }
-
 .ebsclass .title {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-
 .ebsclass .subtitle {
     font-size: 14px;
 }
@@ -143,7 +148,6 @@
     font-size: 16px;
     font-weight: bold;
 }
-
 .ebsclass .link img {
     width: 480px;
 }
@@ -151,12 +155,10 @@
 .급식 {
     margin-top: 100px;
 }
-
 .급식 .title {
     font-size: 25px;
     font-weight: bold;
 }
-
 .급식 .link img {
     width: 480px;
 }
@@ -164,12 +166,10 @@
 .시험시간표 {
     margin-top: 100px;
 }
-
 .시험시간표 .title {
     font-size: 25px;
     font-weight: bold;
 }
-
 .시험시간표 .link img {
     width: 480px;
 }
