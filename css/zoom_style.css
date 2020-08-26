@@ -49,7 +49,7 @@ body {
     margin-top: 40px;
 }
 .text .subject .button input {
-    background: #091921;
+    background-color: #091921;
     border: 2px solid rgb(182, 182, 182);
     color: white;
     cursor: pointer;
@@ -66,5 +66,5 @@ body {
     border-right: none;
 }
 .button input:hover {
-    background: #000000;
+    background: #03090c;
 }
