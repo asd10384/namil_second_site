@@ -87,6 +87,16 @@ body {
 .text {
     margin-top: 30px;
 }
+.text .zoom {
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 150%;
+}
+.text .subject {
+    margin-top: 35px;
+}
 .text .subject .button input {
     border: 2px solid rgb(182, 182, 182);
     color: white;
@@ -106,12 +116,4 @@ body {
 }
 .button input:hover {
     background-color: #0a1920;
-}
-
-.text .zoom {
-    margin-top: 30px;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    line-height: 150%;
 }
