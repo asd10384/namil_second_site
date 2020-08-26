@@ -39,6 +39,9 @@
                 <div class="title">
                     밑에서 코드를 복사해 아래 박스에 넣고<br>확인버튼을 누르세요.
                 </div>
+                <div class="subtitle">
+                    (- 는 안붙쳐도 됩니다.)
+                </div>
                 <div class="id">
                     <input type="text" placeholder="000-000-0000" id="id"/>
                 </div>
@@ -48,10 +51,8 @@
                 <script>
                     function gozoom() {
                         const url = document.getElementById('id').value;
-                        const url2 = document.querySelector("#id");
-                        var url3 = url2.textContent.toString;
-                        const zoom = document.querySelector("#zoom");
-                        zoom.innerHTML = url + b + url3;
+                        var urlid = url.replace('-', '');
+                        document.location.href="https://us04web.zoom.us/j/" + urlid;
                     }
                 </script>
             </div>
