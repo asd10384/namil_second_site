@@ -37,7 +37,7 @@
         <div class="main">
             <div class="text">
                 <div class="subject" id="sub">
-                    <input type="button" value="국어" onclick="zoomid('국어');" />
+                    <input type="button" value="국어" onclick="sub='국어'; zoomid();" />
                 </div>
                 <div class="zoom" id="zoom">
                     <a>12</a>
@@ -49,9 +49,8 @@
 
                 zoom.innerHTML = "";
 
-                function zoomid(String) {
-                    var s = String;
-                    zoom.innerHTML == s;
+                function zoomid() {
+                    zoom.innerHTML = sub;
                 }
             </script>
         </div>
