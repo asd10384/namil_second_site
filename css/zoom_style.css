@@ -9,6 +9,7 @@ body {
 
 .nav-item {
     margin-top: 7px;
+    position: absolute;
 }
 
 .nav-item.i img {
@@ -18,8 +19,7 @@ body {
 
 .nav-item.title {
     font-size: 40px;
-    margin-left: 5%;
-    margin-right: auto;
+    left: 5%;
     margin-top: 22px;
     font-weight: bold;
 }
