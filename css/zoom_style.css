@@ -3,23 +3,23 @@ body {
     background: #1e323b;
 }
 .nav {
-    background-color: lightblue;
+    background: lightblue;
     display: flex;
 }
 
 .nav-item {
     margin-top: 7px;
+    position: absolute;
 }
 
 .nav-item.i img {
     width: 90px;
-    margin-left: 10px;
+    left: 10px;
 }
 
 .nav-item.title {
     font-size: 40px;
-    margin-left: 5%;
-    margin-right: auto;
+    left: 5%;
     margin-top: 22px;
     font-weight: bold;
 }
