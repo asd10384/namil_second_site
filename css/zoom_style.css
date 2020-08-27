@@ -17,10 +17,9 @@ body {
 }
 
 .nav-item.title {
-    position: absolute;
-    left: 25%;
-    right: 50%;
     font-size: 40px;
+    margin-left: 5%;
+    margin-right: auto;
     margin-top: 22px;
     font-weight: bold;
 }
