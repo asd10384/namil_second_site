@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="timer_style.css" />
+        <title>타이머</title>
+    </head>
+    <body>
+        <div class="display">
+            <div class="time" id="time">12</div>
+            <div class="button">
+                <div class="start">
+                    <input type="button" class="start" id="start" value="시작" onclick="sta();"/>
+                </div>
+                <div class="stop">
+                    <input type="button" class="stop" id="stop" value="정지" onclick="sto();"/>
+                </div>
+            </div>
+            <div class="button">
+                <div class="reset">
+                    <input type="button" class="stop" id="stop" value="초기화" onclick="res();"/>
+                </div>
+            </div>
+        </div>
+        <script>
+            function addZeros(num, digit) { // 자릿수 맞춰주기
+                var zero = '';
+                num = num.toString();
+                if (num.length < digit) {
+                    for (i = 0; i < digit - num.length; i++) {
+                    zero += '0';
+                    }
+                }
+                return zero + num;
+            }
+
+            const time = document.querySelector("#time");
+            const start1 = document.querySelector("#start");
+            const stop1 = document.querySelector("#stop");
+
+            start1.style.display = 'block';
+            stop1.style.display = 'none';
+            
+            var hour = 0;
+            var min = 0;
+            var sec = 0;
+            var milsec = 0;
+            var go = false;
+
+            setInterval(() => {
+                if (go) {
+                    milsec += 0.4;
+                    if (parseInt(milsec) == 100) {
+                        milsec = 0;
+                        sec += 1;
+                    }
+                    if (sec == 60) {
+                        sec = 0;
+                        min += 1;
+                    }
+                    if (min == 60) {
+                        min = 0;
+                        hour += 1;
+                    }
+                }
+                time.innerHTML = addZeros(hour, 2) 
+                                + " : " + addZeros(min, 2) 
+                                + " : " + addZeros(sec, 2) 
+                                + "." + addZeros(parseInt(milsec), 2);
+            });
+
+            function sta() {
+                go = true;
+                start1.style.display = 'none';
+                stop1.style.display = 'block';
+            }
+            function sto() {
+                go = false;
+                start1.style.display = 'block';
+                stop1.style.display = 'none';
+            }
+            function res() {
+                go = false;
+                start1.style.display = 'block';
+                stop1.style.display = 'none';
+                hour = 0;
+                min = 0;
+                sec = 0;
+                milsec = 0;
+            }
+        </script>
+    </body>
+</html>
