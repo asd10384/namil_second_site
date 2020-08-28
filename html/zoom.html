@@ -68,7 +68,7 @@
                 </div>
                 <div class="subject" id="sub">
                     <div class="button">
-                        <input type="button" value="국어" onclick="sub=1; zoomid();" />
+                    <input type="button" value="국어" onclick="if(sub==1){same();}else{sub=1; zoomid();}" />
                         <input type="button" value="수학" onclick="sub=2; zoomid();" />
                         <input type="button" value="사회" onclick="sub=3; zoomid();" />
                         <br><div class="space"></div><br>
@@ -110,6 +110,10 @@
                     else if (sub == 11) {a11();}
                     else if (sub == 12) {a12();}
                     else if (sub == 13) {a13();}
+                }
+                function same() {
+                    zoomset.style.fontSize = "30px";
+                    zoom.innerHTML = "";
                 }
             </script>
             <script>
