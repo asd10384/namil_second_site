@@ -91,11 +91,13 @@
             </div>
             <script>
                 const zoom = document.querySelector("#zoom");
+                const zoomset = document.getElementById("zoom");
                 var sub = 0;
 
                 zoom.innerHTML = "";
 
                 function zoomid() {
+                    zoomset.style.fontSize = "30px";
                     if (sub == 1) {a1();}
                     else if (sub == 2) {a2();}
                     else if (sub == 3) {a3();}
@@ -171,6 +173,7 @@
                                     + b + "전혜경(1-8) 653-279-3519"
                 }
                 function a13() {
+                    zoomset.style.fontSize = "20px";
                     zoom.innerHTML = " [ 자체 ] "
                                     + b + "자연진로탐구반(김남이)" + b + "451-264-3195"
                                     + b + "방송 연구반(김유경)" + b + "502-632-0128"
