@@ -68,23 +68,23 @@
                 </div>
                 <div class="subject" id="sub">
                     <div class="button">
-                        <input type="button" value="국어" onclick="sub=1; zoomid();" />
-                        <input type="button" value="수학" onclick="sub=2; zoomid();" />
-                        <input type="button" value="사회" onclick="sub=3; zoomid();" />
+                    <input type="button" value="국어" onclick="if(sub==1){same();}else{sub=1; zoomid();}" />
+                    <input type="button" value="수학" onclick="if(sub==2){same();}else{sub=2; zoomid();}" />
+                    <input type="button" value="사회" onclick="if(sub==3){same();}else{sub=3; zoomid();}" />
                         <br><div class="space"></div><br>
-                        <input type="button" value="과학" onclick="sub=4; zoomid();" />
-                        <input type="button" value="실험" onclick="sub=5; zoomid();" />
-                        <input type="button" value="영어" onclick="sub=6; zoomid();" />
+                    <input type="button" value="과학" onclick="if(sub==4){same();}else{sub=4; zoomid();}" />
+                    <input type="button" value="실험" onclick="if(sub==5){same();}else{sub=5; zoomid();}" />
+                    <input type="button" value="영어" onclick="if(sub==6){same();}else{sub=6; zoomid();}" />
                         <br><div class="space"></div><br>
-                        <input type="button" value="체육" onclick="sub=7; zoomid();" />
-                        <input type="button" value="음악" onclick="sub=8; zoomid();" />
-                        <input type="button" value="기가" onclick="sub=9; zoomid();" />
+                    <input type="button" value="체육" onclick="if(sub==7){same();}else{sub=7; zoomid();}" />
+                    <input type="button" value="음악" onclick="if(sub==8){same();}else{sub=8; zoomid();}" />
+                    <input type="button" value="기가" onclick="if(sub==9){same();}else{sub=9; zoomid();}" />
                         <br><div class="space"></div><br>
-                        <input type="button" value="정보" onclick="sub=10; zoomid();" />
-                        <input type="button" value="진로" onclick="sub=11; zoomid();" />
-                        <input type="button" value="창체" onclick="sub=12; zoomid();" />
+                    <input type="button" value="정보" onclick="if(sub==10){same();}else{sub=10; zoomid();}" />
+                    <input type="button" value="진로" onclick="if(sub==11){same();}else{sub=11; zoomid();}" />
+                    <input type="button" value="창체" onclick="if(sub==12){same();}else{sub=12; zoomid();}" />
                         <br><div class="space"></div><br>
-                        <input type="button" value="동아리" onclick="sub=13; zoomid();" />
+                    <input type="button" value="동아리" onclick="if(sub==13){same();}else{sub=13; zoomid();}" />
                     </div>
                 </div>
             </div>
@@ -110,6 +110,11 @@
                     else if (sub == 11) {a11();}
                     else if (sub == 12) {a12();}
                     else if (sub == 13) {a13();}
+                }
+                function same() {
+                    zoomset.style.fontSize = "30px";
+                    sub = 0;
+                    zoom.innerHTML = "";
                 }
             </script>
             <script>
