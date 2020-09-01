@@ -41,16 +41,27 @@
 .main {
     text-align: center;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .시간표 {
     font-size: 20px;
 }
 
-.시간표 table {
-    margin: 24px;
-}
-
 .시간표 .classtime {
     font-weight: bold;
+}
+
+.교시 {
+    padding: 10px 4px;
+}
+
+.요일 {
+    padding: 10px 4px;
+}
+
+.space {
+    margin-top: 50px;
 }
