@@ -55,6 +55,10 @@
     font-weight: bold;
 }
 
-.시간표 .classtime .교시 {
-    padding: 12px 10px;
+.교시 {
+    padding: 5px 10px;
+}
+
+.요일 {
+    padding: 5px 10px;
 }
