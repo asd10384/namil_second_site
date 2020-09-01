@@ -53,5 +53,8 @@
 
 .시간표 .classtime {
     font-weight: bold;
+}
+
+.시간표 .classtime .교시 {
     padding: 6px 5px;
 }
