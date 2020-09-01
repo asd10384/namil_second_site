@@ -44,15 +44,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .시간표 {
     font-size: 20px;
-}
-
-.시간표 table {
-    margin: 24px;
 }
 
 .시간표 .classtime {
