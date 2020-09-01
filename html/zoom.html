@@ -57,6 +57,7 @@
                         const zoom = document.querySelector('#zoom');
                         const url = document.getElementById('id').value;
                         var urlid = url.replace(/-/gi, '');
+                        urlid = url.replace(/ /gi, '');
                         window.open('https://us04web.zoom.us/j/' + urlid, '_blank');
                         location.reload();
                     }
