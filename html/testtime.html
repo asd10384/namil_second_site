@@ -8,13 +8,13 @@
 
         <meta name="viewport" content="width=device-width">
 		<meta name="description" content="사이트를 버튼 한번으로 들어갈수있는 사이트">
-		<link href="testtime_style.css" rel="stylesheet" type="text/css" />
+		<link href="/css/testtime_style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
         <div class="nav">
-            <div class="nav-item i"><a href="index.html" title="메인으로 돌아가기"><img src="image/logo.png" class="logo"></a></div>
-            <div class="nav-item title"><a href="index.html" title="메인으로 돌아가기"><b>학교관련사이트</b></a></div>
+            <div class="nav-item i"><a href="/index.html" title="메인으로 돌아가기"><img src="/image/logo.png" class="logo"></a></div>
+            <div class="nav-item title"><a href="/index.html" title="메인으로 돌아가기"><b>학교관련사이트</b></a></div>
         </div>
 
         <div class="time">
@@ -34,11 +34,6 @@
             </div>
         </div>
 
-        <!-- 여기서 에러 설정 -->
-        <script>
-            var err = true;
-        </script>
-
         <div class="main">
             <div class="error">
                 <div id="err" class="err">
@@ -50,12 +45,22 @@
             </div>
             <div class="image" id="image">
                 <!-- 여기 src 에 이미지 -->
-                <img src="" class="testtime image">
+                <img src="/image/testtimeimage.png" class="testtime image">
             </div>
+            
+            <!-- 여기서 에러 설정 -->
+            <script type="text/javascript">
+                var err = true;
+            </script>
 
             <!-- 여기 문구 바꿔주기 스크립트 -->
-            <script>
-                if (err) {errt();} else {errf();}
+            <script type="text/javascript">
+                if (err) {
+                    errt();
+                }
+                else {
+                    errf();
+                }
 
                 function errt() {
                     const err = document.querySelector("#err");
