@@ -34,13 +34,46 @@
             </div>
         </div>
 
+        <!-- 여기서 에러 설정 -->
+        <script>
+            var err = true;
+        </script>
+
         <div class="main">
-            <div class="title">
-                <span>&nbsp; 1학기 시험시간표 &nbsp;</span>
+            <div class="error">
+                <div id="err" class="err">
+                    <a>아직 추가되지 않았습니다.</a>
+                </div>
             </div>
-            <div class="image">
-                <img src="image/testtimeimage.png" class="testtime image">
+            <div class="title" id="title">
+                <span>&nbsp; <!-- 여기 텍스트 --> &nbsp;</span>
             </div>
+            <div class="image" id="image">
+                <!-- 여기 src 에 이미지 -->
+                <img src="" class="testtime image">
+            </div>
+
+            <!-- 여기 문구 바꿔주기 스크립트 -->
+            <script>
+                if (err) {errt();} else {errf();}
+
+                function errt() {
+                    const err = document.querySelector("#err");
+                    const title = document.querySelector("#title");
+                    const image = document.querySelector("#image");
+                    err.style.display = 'none';
+                    title.style.display = 'block';
+                    image.style.display = 'block';
+                }
+                function errf() {
+                    const err = document.querySelector("#err");
+                    const title = document.querySelector("#title");
+                    const image = document.querySelector("#image");
+                    err.style.display = 'block';
+                    title.style.display = 'none';
+                    image.style.display = 'none';
+                }
+            </script>
         </div>
         <br>
         <br>
