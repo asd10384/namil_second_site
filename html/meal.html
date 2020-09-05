@@ -39,36 +39,12 @@
         <div class="main">
             <div class="kcal" id="kcal"></div>
             <div class="meal" id="meal"></div>
+            <script src="/meal.js"></script>
             <script>
-                const divkcal = document.querySelector("#kcal");
-                const divmeal = document.querySelector("#meal");
-
-                const request = require('request');
-                const cheerio = require('cheerio');
-
-                const url = "http://school.busanedu.net/bsnamil-h/main.do";
-
-                request(url, (error, response, body) => {
-                  if (error) throw error;
-
-                  let $ = cheerio.load(body);
-
-                  try {
-                    let kcal = '';
-                    let meal = '';
-
-                    $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
-                      kcal = $(this).find('dt').text().trim();
-                      divkcal.innerHTML = `${kcal}`;
-
-                      meal = $(this).find('dd').text().trim();
-                      divmeal.innerHTML = `${meal}`;
-
-                    });
-                  } catch (error) {
-                    console.error(error);
-                  }
-                });
+                const dkcal = document.querySelector("#kcal");
+                const dmeal = document.querySelector("#meal");
+                dkcal.innerHTML = jkcal;
+                dmeal.innerHTML = jmeal;
             </script>
         </div>
     </body>
