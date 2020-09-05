@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+        user-scalable=no">
+        <title>남일고 급식</title>
+
+        <meta name="viewport" content="width=device-width">
+        <!-- 여기 콘텐트-->
+        <meta name="description" content="남일고 급식확인사이트">
+        <!-- 여기 css 링크-->
+        <link href="/css/newpage_style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="nav-item i"><a href="/index.html" title="메인으로 돌아가기"><img src="/image/logo.png" class="logo"></a></div>
+            <div class="nav-item title"><a href="/index.html" title="메인으로 돌아가기"><b>학교관련사이트</b></a></div>
+        </div>
+
+        <div class="time">
+            <div class="main-time">
+                <script type="text/javascript">
+                        var d = new Date();
+                        document.write('오늘날짜 : ' + d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일 ');
+                    if (d.getDay() == 0) {document.write('일');}
+                    else if (d.getDay() == 1) {document.write('월');}
+                    else if (d.getDay() == 2) {document.write('화');}
+                    else if (d.getDay() == 3) {document.write('수');}
+                    else if (d.getDay() == 4) {document.write('목');}
+                    else if (d.getDay() == 5) {document.write('금');}
+                    else if (d.getDay() == 6) {document.write('토');}
+                    document.write('요일'); // 일요일 = 0
+                </script>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="kcal" id="kcal"></div>
+            <div class="meal" id="meal"></div>
+            <script>
+                const divkcal = document.querySelector("#kcal");
+                const divmeal = document.querySelector("#meal");
+
+                const request = require('request');
+                const cheerio = require('cheerio');
+
+                const url = "http://school.busanedu.net/bsnamil-h/main.do";
+
+                request(url, (error, response, body) => {
+                    if (error) throw error;
+
+                    let $ = cheerio.load(body);
+
+                    try {
+                        let kcal = '';
+                        let meal = '';
+
+                        $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
+                        kcal = $(this).find('dt').text().trim();
+                        divkcal.innerHTML = `${kcal}`;
+
+                        meal = $(this).find('dd').text().trim();
+                        divmeal.innerHTML = `${meal}`;
+
+                        });
+                    } catch (error) {
+                        console.error(error);
+                    }
+                });
+            </script>
+        </div>
+    </body>
+</html>
