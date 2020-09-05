@@ -49,25 +49,25 @@
                 const url = "http://school.busanedu.net/bsnamil-h/main.do";
 
                 request(url, (error, response, body) => {
-                    if (error) throw error;
+                  if (error) throw error;
 
-                    let $ = cheerio.load(body);
+                  let $ = cheerio.load(body);
 
-                    try {
-                        let kcal = '';
-                        let meal = '';
+                  try {
+                    let kcal = '';
+                    let meal = '';
 
-                        $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
-                        kcal = $(this).find('dt').text().trim();
-                        divkcal.innerHTML = `${kcal}`;
+                    $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
+                      kcal = $(this).find('dt').text().trim();
+                      divkcal.innerHTML = `${kcal}`;
 
-                        meal = $(this).find('dd').text().trim();
-                        divmeal.innerHTML = `${meal}`;
+                      meal = $(this).find('dd').text().trim();
+                      divmeal.innerHTML = `${meal}`;
 
-                        });
-                    } catch (error) {
-                        console.error(error);
-                    }
+                    });
+                  } catch (error) {
+                    console.error(error);
+                  }
                 });
             </script>
         </div>
