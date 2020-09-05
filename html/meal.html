@@ -61,12 +61,8 @@
                             jkcal = $(this).find('dt').text().trim();
                             jmeal = $(this).find('dd').text().trim();
 
-                            var jskcal = (`${jkcal}`).toString();
-                            var jsmeal = (`${jmeal}`).toString();
-
-                            document.getElementById('kcal').innerHTML = jskcal;
-                            document.getElementById('meal').innerHTML = jsmeal;
-
+                            document.getElementById('kcal').innerHTML = `${jkcal}`;
+                            document.getElementById('meal').innerHTML = `${jmeal}`;
                         });
                     } catch (error) {
                         console.error(error);
