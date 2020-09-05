@@ -11,6 +11,36 @@
         <meta name="description" content="남일고 급식확인사이트">
         <!-- 여기 css 링크-->
         <link href="/css/newpage_style.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript">
+            const request = require('request');
+            const cheerio = require('cheerio');
+            
+            const url = "http://school.busanedu.net/bsnamil-h/main.do";
+            
+            request(url, (error, response, body) => {
+              if (error) throw error;
+            
+              let $ = cheerio.load(body);
+            
+              try {
+                let jkcal = '';
+                let jmeal = '';
+            
+                $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
+                jkcal = $(this).find('dt').text().trim();
+            
+                jmeal = $(this).find('dd').text().trim();
+
+                document.write(`${jkcal}`);
+                document.write(`${jmeal}`);
+            
+                });
+              } catch (error) {
+                console.error(error);
+              }
+            });
+        </script>
     </head>
 
     <body>
@@ -37,38 +67,10 @@
         </div>
 
         <div class="main">
-            <div class="kcal" id="kcal"></div>
-            <div class="meal" id="meal"></div>
-            
-            <script type="text/javascript">
-                const request = require('request');
-                const cheerio = require('cheerio');
-                
-                const url = "http://school.busanedu.net/bsnamil-h/main.do";
-                
-                request(url, (error, response, body) => {
-                  if (error) throw error;
-                
-                  let $ = cheerio.load(body);
-                
-                  try {
-                    let jkcal = '';
-                    let jmeal = '';
-                
-                    $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
-                    jkcal = $(this).find('dt').text().trim();
-                
-                    jmeal = $(this).find('dd').text().trim();
-
-                    document.write(`${jkcal}`);
-                    document.write(`${jmeal}`);
-                
-                    });
-                  } catch (error) {
-                    console.error(error);
-                  }
-                });
-            </script>
+            <div class="급식">
+                <div class="kcal" id="kcal"></div>
+                <div class="meal" id="meal"></div>
+            </div>
         </div>
     </body>
 </html>
