@@ -43,35 +43,35 @@
             </div>
 
             <script>
-              const request = require('request');
-              const cheerio = require('cheerio');
+                const request = require('request');
+                const cheerio = require('cheerio');
                 
-              const url = "http://school.busanedu.net/bsnamil-h/main.do";
+                const url = "http://school.busanedu.net/bsnamil-h/main.do";
                 
-              request(url, (error, response, body) => {
-                if (error) throw error;
+                request(url, (error, response, body) => {
+                    if (error) throw error;
               
-                let $ = cheerio.load(body);
+                    let $ = cheerio.load(body);
               
-                try {
-                  let jkcal = '';
-                  let jmeal = '';
+                    try {
+                        let jkcal = '';
+                        let jmeal = '';
                 
-                  $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
-                  jkcal = $(this).find('dt').text().trim();
-                  jmeal = $(this).find('dd').text().trim();
+                        $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
+                            jkcal = $(this).find('dt').text().trim();
+                            jmeal = $(this).find('dd').text().trim();
 
-                  var jskcal = (`${jkcal}`).toString();
-                  var jsmeal = (`${jmeal}`).toString();
+                            var jskcal = (`${jkcal}`).toString();
+                            var jsmeal = (`${jmeal}`).toString();
 
-                  document.getElementById('kcal').innerHTML = jskcal;
-                  document.getElementById('meal').innerHTML = jsmeal;
+                            document.getElementById('kcal').innerHTML = jskcal;
+                            document.getElementById('meal').innerHTML = jsmeal;
 
-                  });
-                } catch (error) {
-                  console.error(error);
-                }
-              });
+                        });
+                    } catch (error) {
+                        console.error(error);
+                    }
+                });
             </script>
         </div>
     </body>
