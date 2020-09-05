@@ -14,11 +14,10 @@ request(url, (error, response, body) => {
 
     $('div.widgDiv.meal_menu1095').find('dl').each(function (index, elem) {
     jkcal = $(this).find('dt').text().trim();
-    console.log(`${jkcal}`);
-
     jmeal = $(this).find('dd').text().trim();
-    console.log(`${jmeal}`);
 
+    console.log(`${jkcal}`);
+    console.log(`${jmeal}`);
     });
   } catch (error) {
     console.error(error);
