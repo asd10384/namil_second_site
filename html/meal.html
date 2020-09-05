@@ -38,8 +38,8 @@
 
         <div class="main">
             <div class="급식">
-                <div class="kcal" id="kcal"></div>
-                <div class="meal" id="meal"></div>
+                <div class="kcal" id="kcal">1</div>
+                <div class="meal" id="meal">1</div>
             </div>
 
             <script>
@@ -64,8 +64,8 @@
                   var jskcal = `${jkcal}`.toString();
                   var jsmeal = `${jmeal}`.toString();
 
-                  document.getElementById('kcal').innerHTML = (`${jskcal}`);
-                  document.getElementById('meal').innerHTML = (`${jsmeal}`);
+                  document.getElementById('kcal').innerHTML = jskcal;
+                  document.getElementById('meal').innerHTML = jsmeal;
 
                   });
                 } catch (error) {
