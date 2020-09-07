@@ -65,15 +65,13 @@ body {
 }
 .set .id {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .set .id input {
     margin-bottom: 5px;
     width: 350px;
     font-size: 200%;
     text-align: center;
-}
-.set .ok {
-    margin-top: 20px;
 }
 .set .ok input {
     border: 2px solid rgb(125, 125, 125);
