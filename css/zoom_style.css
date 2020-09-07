@@ -69,10 +69,8 @@ body {
     font-size: 200%;
     text-align: center;
 }
-.ok .idspace {
-    font-size: 10px;
-}
 .set .ok input {
+    margin-top: 10px;
     border: 2px solid rgb(125, 125, 125);
     color: white;
     cursor: pointer;
