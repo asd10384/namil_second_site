@@ -65,12 +65,12 @@ body {
 }
 .set .id input {
     margin-top: 20px;
-    margin-bottom: 100px;
     width: 350px;
     font-size: 200%;
     text-align: center;
 }
 .set .ok input {
+    margin-top: 10px;
     border: 2px solid rgb(125, 125, 125);
     color: white;
     cursor: pointer;
