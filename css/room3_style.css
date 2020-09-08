@@ -1,6 +1,9 @@
 /* CSS Document */
 body {
-    background: rgb(150, 150, 150);
+    background: #1e323b;
+}
+.시간표 table {
+    background: white;
 }
 .nav {
     background-color: lightblue;
