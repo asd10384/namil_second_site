@@ -1,7 +1,6 @@
 /* CSS Document */
 body {
-    background: #1e323b;
-    color: white;
+    background: rgb(150, 150, 150);
 }
 .nav {
     background-color: lightblue;
