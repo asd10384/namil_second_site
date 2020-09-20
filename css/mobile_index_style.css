@@ -142,6 +142,25 @@
     width: 350px;
 }
 
+.classting {
+    margin-top: 100px;
+}
+.classting .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.classting .subtitle {
+    font-size: 14px;
+}
+.classting .subtitle .titlebold {
+    font-size: 16px;
+    font-weight: bold;
+}
+.classting .link img {
+    width: 350px;
+}
+
 .급식 {
     margin-top: 100px;
 }
