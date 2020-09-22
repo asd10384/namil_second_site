@@ -1,8 +1,8 @@
 // browserify.cmd jj.js -o meal.js
 
-import request from 'request';
-import { load } from 'cheerio';
-import { writeFileSync } from 'fs';
+import request from './request';
+import { load } from './cheerio';
+import { writeFileSync } from './fs';
 
 const url = "http://bsnamil.hs.kr/bsnamil-h/main.do";
 
