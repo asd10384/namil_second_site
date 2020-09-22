@@ -1,16 +1,15 @@
 // browserify.cmd jj.js -o meal.js
 
-const request = require('request');
-const cheerio = require('cheerio');
-const fs = require('fs');
-const session = require('express-session');
+import request from 'request';
+import { load } from 'cheerio';
+import { writeFileSync } from 'fs';
 
 const url = "http://bsnamil.hs.kr/bsnamil-h/main.do";
 
-request(url, (error, response, body) => {
+request(url, (error, _response, body) => {
     if (error) throw error;
 
-    let $ = cheerio.load(body);
+    let $ = load(body);
 
     try {
         let jkcal = '';
@@ -26,7 +25,7 @@ request(url, (error, response, body) => {
             const jskcal = `${jkcal}`
             const jsmeal = `${jmeal}`
 
-            fs.writeFileSync("meal.txt", jskcal + "!" + jsmeal, {encoding: 'utf8'});
+            writeFileSync("meal.txt", jskcal + "!" + jsmeal, {encoding: 'utf8'});
         });
     } catch (error) {
         console.error(error);
