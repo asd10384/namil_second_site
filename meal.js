@@ -39821,7 +39821,7 @@ const request = require('request');
 const cheerio = require('cheerio');
 const fs = require('fs');
 
-const url = "http://bsnamil.hs.kr/bsnamil-h/main.do";
+const url = "http://school.busanedu.net/bsnamil-h/main.do";
 
 request(url, (error, response, body) => {
     if (error) throw error;
