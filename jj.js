@@ -6,7 +6,7 @@ import { writeFileSync } from 'fs';
 
 const url = "http://bsnamil.hs.kr/bsnamil-h/main.do";
 
-request(url, (error, _response, body) => {
+request(url, (error, response, body) => {
     if (error) throw error;
 
     let $ = load(body);
